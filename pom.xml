@@ -5,13 +5,20 @@
     <groupId>ru.ezhov</groupId>
     <artifactId>column-parser</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <packaging>jar</packaging>
+    <modules>
+        <module>column-parser-engine</module>
+        <module>column-parser-gui</module>
+        <module>column-parser-web</module>
+    </modules>
+    <packaging>pom</packaging>
 
     <name>column-parser</name>
     <url>http://maven.apache.org</url>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
 
     <dependencies>
@@ -21,13 +28,5 @@
             <version>4.12</version>
             <scope>test</scope>
         </dependency>
-
-        <!-- https://mvnrepository.com/artifact/com.github.tulskiy/jkeymaster -->
-        <dependency>
-            <groupId>com.github.tulskiy</groupId>
-            <artifactId>jkeymaster</artifactId>
-            <version>1.1</version>
-        </dependency>
-
     </dependencies>
 </project>
